@@ -41,33 +41,34 @@ To use JSON Transformer, run the program with the following arguments:
 
 Preserve all information:
 
-    ```sh
-    ./transform
-    ```
+```sh
+./transform
+```
+
 Delete a key:
 
-    ```sh
-    ./transform delete:key
-    ```
+```sh
+./transform delete:key
+```
 
 Set the value of a key:
 
-    ```sh
-    ./transform set:newKey:Value
-    ./transform set:existingKey:newValue
-    ```
+```sh
+./transform set:newKey:Value
+./transform set:existingKey:newValue
+```
 
 Rename a key:
 
-    ```sh
-    ./transform rename:key:newKey
-    ```
+```sh
+./transform rename:key:newKey
+```
 
 Combine multiple operations:
 
-    ```sh
-    ./transform delete:key_1 set:key_2:newValue rename:key_3:newKey
-    ```
+```sh
+./transform delete:key_1 set:key_2:newValue rename:key_3:newKey
+```
 
 ## Input JSON Format
 
@@ -78,11 +79,11 @@ The input file should be in valid JSON format, assuming that each key or value c
 For example:
 
 ```json
-    {
-        "color": "blue",
-        "number": "two",
-        "pet": "cat"
-    }
+{
+    "color": "blue",
+    "number": "two",
+    "pet": "cat"
+}
 ```
 
 ## Output JSON Format
@@ -97,7 +98,7 @@ The motivation behind creating JSON Transformer was to provide a simple and effi
 
 ### Technologies Used
 
-    Go: The programming language chosen for its performance, simplicity, and powerful standard library for handling JSON.
+Go: The programming language chosen for its performance, simplicity, and powerful standard library for handling JSON.
 
 ### Development Process
 
